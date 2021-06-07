@@ -81,26 +81,43 @@
                   <use href="./Images/sprite.svg#close"></use>
                 </svg>
               </button>
-              <h2>Оставьте сови данные, мы вам перезвоним</h2>
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name" />
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" />
-              <label for="email">Почта</label>
-              <input type="email" name="email" id="email" />
-              <label for="comment">Комментрий</label>
-              <textarea
-                name="comment"
-                id="comment"
-                placeholder="Введите текст"
-              ></textarea>
-              <br />
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              <label for="checkbox"
-                >Соглашаюсь с рассылкой и принимаю
-                <a>Условия договора</a></label
-              >
-              <button type="button">Отправить</button>
+              <form class="js-speaker-form">
+                <div class="form-field">
+                  <p class="form-field-title">
+                    Оставьте сови данные, мы вам перезвоним
+                  </p>
+
+                  <label for="name" class="form-label">Имя</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="form-field">
+                  <label for="tel">Телефон</label>
+                  <input type="tel" name="tel" id="tel" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Почта</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-field">
+                  <label for="comment">Комментрий</label>
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+
+                <div class="sign">
+                  <input type="checkbox" name="checkbox" id="checkbox" />
+                  <label for="checkbox"
+                    >Соглашаюсь с рассылкой и принимаю <a>Условия договора</a>
+                  </label>
+                </div>
+
+                <div class="form-field">
+                  <button type="button" class="hero-button">Отправить</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

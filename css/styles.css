@@ -354,6 +354,69 @@ img {
   border-color: var(--accent-color);
 }
 
+.js-speaker-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field-title {
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+
+  color: #212121;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.form-field input {
+  margin-bottom: 10px;
+
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  margin-bottom: 32px;
+
+  height: 120px;
+  padding: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field .comment {
+  display: flex;
+}
+.sign {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sign label {
+  line-height: 1.7;
+}
+
 /* Features */
 .features-section {
   padding-top: 94px;
