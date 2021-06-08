@@ -580,7 +580,6 @@ img {
 .icon-list {
   display: flex;
   justify-content: center;
-  width: 270px;
 }
 .icon-list svg {
   width: 44px;
@@ -675,6 +674,10 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.address-container {
+  margin-right: 70px;
+}
+
 .address {
   margin-top: 20px;
 }
@@ -690,16 +693,17 @@ img {
   margin-bottom: 0;
 }
 
-.icon-container {
-  margin-left: 70px;
-}
-
 .footer-i svg {
   fill: var(--third-icon-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.icon-container {
+  margin-right: 93px;
+}
+
 .icon-list.footer-i {
   justify-content: flex-start;
 }
@@ -707,7 +711,7 @@ img {
 .icon-list-title {
   margin-bottom: 20px;
 
-  font-size: 14px;
+  font-weight: bold;
   color: var(--white-text-color);
 }
 
@@ -905,4 +909,69 @@ img {
   font-size: 16px;
   line-height: 1.8;
   color: var(--secondary-text-color);
+}
+
+.mailing-container {
+  display: flex;
+}
+
+.mailing {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.mailing-title {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  color: var(--white-text-color);
+}
+
+.mailing-list {
+  display: flex;
+  align-items: center;
+}
+
+.mailing-list-item input {
+  margin-right: 12px;
+
+  width: 360px;
+  padding: 15px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.mailing-list-item button {
+  display: flex;
+
+  padding: 10px 30px;
+  align-items: center;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--white-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mailing-list-item svg {
+  margin-left: 10px;
+
+  width: 24px;
+  height: 24px;
+
+  fill: var(--third-icon-color);
 }
