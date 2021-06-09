@@ -81,26 +81,57 @@
                   <use href="./Images/sprite.svg#close"></use>
                 </svg>
               </button>
+
+              <!-- NEED TO COPY -->
               <form class="js-speaker-form">
                 <div class="form-field">
                   <p class="form-field-title">
-                    Оставьте сови данные, мы вам перезвоним
+                    Оставьте свои данные, мы вам перезвоним
                   </p>
-
+                </div>
+                <div class="form-field">
                   <label for="name" class="form-label">Имя</label>
-                  <input type="text" name="name" id="name" />
+                  <input
+                    class="form-field-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+
+                  <svg>
+                    <use href="./Images/sprite.svg#person-modal"></use>
+                  </svg>
                 </div>
                 <div class="form-field">
                   <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel" />
+                  <input
+                    class="form-field-input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                  />
+
+                  <svg>
+                    <use href="./Images/sprite.svg#phone-modal"></use>
+                  </svg>
                 </div>
                 <div class="form-field">
                   <label for="email">Почта</label>
-                  <input type="email" name="email" id="email" />
+                  <input
+                    class="form-field-input"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+
+                  <svg>
+                    <use href="./Images/sprite.svg#mail-modal"></use>
+                  </svg>
                 </div>
-                <div class="form-field">
+                <div class="form-field comment">
                   <label for="comment">Комментрий</label>
                   <textarea
+                    class="form-field-textarea"
                     name="comment"
                     id="comment"
                     placeholder="Введите текст"
@@ -116,7 +147,9 @@
                 </div>
 
                 <div class="form-field">
-                  <button type="button" class="hero-button">Отправить</button>
+                  <button type="button" class="form-field-button">
+                    Отправить
+                  </button>
                 </div>
               </form>
             </div>
@@ -457,7 +490,7 @@
             </li>
           </ul>
         </div>
-
+        <!-- NEED TO COPY -->
         <div class="mailing-container">
           <form class="mailing">
             <p class="mailing-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>

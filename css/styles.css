@@ -64,6 +64,10 @@ img {
   border: none;
 }
 
+input {
+  outline: none;
+}
+
 .button-icon,
 .auth-list-icon {
   fill: var(--first-icon-color);
@@ -362,7 +366,27 @@ img {
 
 .form-field {
   display: flex;
+  position: relative;
+  margin-bottom: 10px;
+
   flex-direction: column;
+}
+
+.form-field svg {
+  position: absolute;
+
+  top: 29px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+}
+
+.form-field-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-field-input:focus + svg {
+  fill: #18a0fb;
 }
 
 .form-field-title {
@@ -385,29 +409,34 @@ img {
 }
 
 .form-field input {
-  margin-bottom: 10px;
-
   height: 40px;
+  padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .form-field textarea {
-  margin-bottom: 32px;
-
   height: 120px;
   padding: 12px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 
-.form-field .comment {
+.form-field.comment {
   display: flex;
+  margin-bottom: 20px;
 }
+
+.form-field-textarea:focus {
+  border-color: var(--accent-color);
+}
+
 .sign {
   display: flex;
+  margin-bottom: 30px;
 
   justify-content: space-evenly;
   align-items: center;
@@ -415,6 +444,24 @@ img {
 
 .sign label {
   line-height: 1.7;
+}
+
+.form-field-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 10px 32px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--white-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Features */
