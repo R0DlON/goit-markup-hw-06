@@ -81,7 +81,62 @@
                   <use href="./Images/sprite.svg#close"></use>
                 </svg>
               </button>
+
+              <!-- Форма -->
+
+              <!-- NEW SCHOOL -->
               <form class="js-speaker-form">
+                <p class="form-field-title">
+                  Оставьте свои данные, мы вам перезвоним
+                </p>
+
+                <label class="form-field">
+                  <span class="form-field-text">Имя</span>
+                  <input name="name" type="text" class="form-field-input" />
+                  <svg>
+                    <use href="./Images/sprite.svg#person-modal"></use>
+                  </svg>
+                </label>
+
+                <label class="form-field">
+                  <span class="form-field-text">Телефон</span>
+                  <input name="tel" type="tel" class="form-field-input" />
+                  <svg>
+                    <use href="./Images/sprite.svg#phone-modal"></use>
+                  </svg>
+                </label>
+
+                <label class="form-field">
+                  <span class="form-field-text">Почта</span>
+                  <input name="email" type="email" class="form-field-input" />
+                  <svg>
+                    <use href="./Images/sprite.svg#mail-modal"></use>
+                  </svg>
+                </label>
+
+                <label class="form-field">
+                  <span class="form-field-text">Комментрий</span>
+                  <textarea
+                    name="comment"
+                    class="form-field-textarea"
+                  ></textarea>
+                </label>
+
+                <div class="form-sign">
+                  <input type="checkbox" name="checkbox" id="checkbox" />
+                  <label for="checkbox" class="form-sign-text"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="cerrent">Условия договора</a>
+                  </label>
+                </div>
+
+                <button type="button" class="form-field-button">
+                  Отправить
+                </button>
+              </form>
+
+              <!-- OLD SCHOOL -->
+              <!-- <form class="js-speaker-form">
                 <div class="form-field">
                   <p class="form-field-title">
                     Оставьте свои данные, мы вам перезвоним
@@ -149,7 +204,7 @@
                     Отправить
                   </button>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
         </div>
@@ -549,7 +604,11 @@
             <p class="mailing-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
             <ul class="mailing-list">
               <li class="mailing-list-item">
-                <input type="email" class="" placeholder="E-mail" />
+                <input
+                  type="email"
+                  class="mailing-list-input"
+                  placeholder="E-mail"
+                />
               </li>
               <li class="mailing-list-item">
                 <button type="button">
@@ -564,6 +623,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
