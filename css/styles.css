@@ -298,6 +298,7 @@ input {
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 6;
 }
 
 .backdrop.is-hidden {
@@ -405,6 +406,7 @@ input {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field svg {
@@ -414,6 +416,8 @@ input {
   left: 15px;
   width: 18px;
   height: 18px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-textarea {
@@ -423,6 +427,7 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-sign {
@@ -431,6 +436,37 @@ input {
 
   align-items: center;
   justify-content: space-evenly;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-sign-icon {
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid black;
+  border-radius: 3px;
+  background-origin: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .form-sign-icon {
+  background-image: url(../Images/checkbox.svg);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .form-sign-text {
@@ -450,7 +486,6 @@ input {
   line-height: 1.9;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   cursor: pointer;
   color: var(--white-text-color);
@@ -458,7 +493,8 @@ input {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
-/* FOR OLD SCHOOL */
+/* FOR OLD SCHOOL 
+Было бы что-то такое, но потом увидел, что есть более ходовая тема и переделал))*/
 /* .form-field {
   display: flex;
   position: relative;
@@ -947,6 +983,11 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background: var(--secondary-background-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-list-input:focus {
+  border-color: var(--accent-color);
 }
 
 .mailing-list-item button {
@@ -967,6 +1008,12 @@ input {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.mailing-button-title {
+  font-weight: bold;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 
 .mailing-list-item svg {
